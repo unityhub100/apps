@@ -21,10 +21,10 @@ public class GameManager : MonoBehaviour {
 	
 	}
 
-    public void NewBlock(int y)
+    public void NewBlock(int s)
     {
         int rand = Random.Range(0, 2);
-        Vector2 pos = new Vector2(0, y);
+        Vector2 pos = new Vector2(0, s);
         GameObject block = Instantiate(blcokPrefab[rand], pos, Quaternion.identity) as GameObject;
         blockList.Add(block);
 
